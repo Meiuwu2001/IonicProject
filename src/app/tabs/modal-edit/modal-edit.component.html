@@ -1,3 +1,41 @@
-<p>
-  modal-edit works!
-</p>
+<!-- product-form.component.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()">Cancelar</ion-button>
+    </ion-buttons>
+    <ion-title>Editar producto</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="save()" [strong]="true">Guardar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="formGroup">
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Código</ion-label>
+      <ion-input formControlName="code"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Categoría</ion-label>
+      <ion-input formControlName="category"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Descripción</ion-label>
+      <ion-input formControlName="description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Precio</ion-label>
+      <ion-input formControlName="price" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Cantidad</ion-label>
+      <ion-input formControlName="amount" type="number"></ion-input>
+    </ion-item>
+  </form>
+</ion-content>
