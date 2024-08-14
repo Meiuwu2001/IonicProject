@@ -7,6 +7,7 @@ import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 import { ModalEditComponent } from './modal-edit/modal-edit.component';
+import { AddTeacherComponent } from './add-teacher/add-teacher.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { ModalEditComponent } from './modal-edit/modal-edit.component';
     TabsPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [TabsPage, ModalEditComponent]
+  declarations: [TabsPage, ModalEditComponent, AddTeacherComponent]
 })
 export class TabsPageModule { }
